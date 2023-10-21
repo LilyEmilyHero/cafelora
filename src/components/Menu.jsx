@@ -1,3 +1,5 @@
+import { Drink } from './Drink';
+
 export const Menu = () => {
   return (
     <section className="menu" id="menu">
@@ -7,26 +9,7 @@ export const Menu = () => {
           Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
         </p>
         <div className="drinks-list">
-          <div className="drink">
-            <div className="drink__product">
-              <div className="drink__cup">
-                <img src="/cups/espresso.png" />
-              </div>
-              <div className="drink__info">
-                <h3>Espresso</h3>
-                <div className="layer">
-                  <div
-                    className="layer__color"
-                    style={{ backgroundColor: '#613916' }}
-                  ></div>
-                  <div className="layer__label">espresso</div>
-                </div>
-              </div>
-            </div>
-            <div className="drink__controls">
-              <button className="order-btn">Objednat</button>
-            </div>
-          </div>
+          <Drink />
 
           <div className="drink">
             <div className="drink__product">
